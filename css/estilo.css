@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("Solway-Regular.ttf");
+    font-family: 'Fonteh2';
+    src: url("AnekDevanagari-Light.ttf");
+}
+
+body{
+    /*background-image: url("blue.jpg");*/
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -8px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+li {
+    text-align: justify;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1100px;
+    top: 45px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(""); /*logo após  URL("") podemos colocar no-repeat, para que a imagem não se repita diversas vezes*/
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Fonteh2', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/*Formatação de imagens com legendas*/
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-python {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-python img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-python figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+figure.foto-python:hover figcaption{
+    opacity: 1;
+}
+
+/*FORMATAÇÃO DO MENU*/
+
+nav#menu {
+    display: block; /*deixar o menu como um bloco para que possa flutuar na tela*/
+}
+
+nav#menu ol {
+    list-style: none; /*retirar marcadores do menu*/
+    text-transform: uppercase; /*deixar o menu em maiúsculo*/
+    position: absolute; /*deixar o menu em posição absoluta, ou seja, posso colocar em qualquer posição dentro do site*/
+    top: -20px; /*distância do topo do site*/
+    left: 500px; /*distância da lateral esquerda do site*/
+}
+
+nav#menu li {
+    display: inline-block; /*deixar as palavras do menu um do lado do outro*/
+    background-color: #dddddd; /*alterar a cor de fundo das palavras*/
+    padding: 10px; /*controlar o espaço dentro do objeto*/
+    margin: 2px; /*aumentar o espaço fora do objeto*/
+    transition: background-color 1s; /*cria uma transição na cor do menu*/
+}
+
+nav#menu li:hover { /*da o efeito quando passa o mouse sobre o menu*/
+    background-color: #606060; /*editar a cor do efeito, no caso, um cinza escuro*/
+}
+
+nav#menu h1 {
+    display: none; /*esconder a escrita "menu principal" */
+}
+
+nav#menu a {
+    color: black; /*troca a cor das palavras do menu*/
+    text-decoration: none; /*retira o sublinhado*/
+}
+
+nav#menu a:hover {
+    color: white; /*troca a cor do menu selecionado,no caso, para branco*/
+    text-decoration: underline; /*sublinha o menu ao ser selecionado*/
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#informacao-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo,sans-serif';
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateraljs {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 18pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateraljs h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 16pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+aside#lateraljs h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
